@@ -1,0 +1,8 @@
+if "help me" in text.lower():
+    print("🚨 Emergency Triggered!")
+    engine.say("Emergency! Help alert activated!")
+    engine.runAndWait()
+
+    # ✅ Create emergency.txt file
+    with open("emergency.txt", "w") as f:
+        f.write("Emergency triggered by voice command.\n")
